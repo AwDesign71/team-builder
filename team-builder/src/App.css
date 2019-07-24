@@ -19,15 +19,13 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+section {
+  display: flex;
+  align-items: flex-start;
+  width: 20%;
+  height: 450px;
+  /* border: 1px solid #000; */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  margin-top: 22px;
 }
