@@ -8,15 +8,18 @@ function App() {
     setTeams(event.target.value);
     console.log(teams)
   }
+  const handleSubmit = event=> {
+    event.preventDefault();
+    console.log(teams)
+  }
   return (
     <div className="App">
       <header className="App-header">
-        { console.log(teams)}
-        {/* <h1>{teams.map(team=>
-          <div>{team.name}</div>)}</h1> */}
+        { console.log('Add',teams)}
+        <h1>{handleValue.teams}</h1>
       </header>
       <section>
-      <form action="">
+      <form action="" onSubmit={event=>handleSubmit(event)}>
         <legend>
           <label htmlFor="">
             Member Name:
@@ -30,7 +33,7 @@ function App() {
             Member Role:
             <input type="text" name='role'/>
           </label>
-          
+          <button>Add Members</button>
         </legend>
       </form>
       </section>
