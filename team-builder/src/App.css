@@ -23,9 +23,26 @@ section {
   display: flex;
   align-items: flex-start;
   width: 20%;
-  height: 450px;
   /* border: 1px solid #000; */
+  height: 150px;
 }
-label {
-  margin-top: 22px;
+legend {
+  margin-top: 33px;
+}
+label>input {
+  margin: 12px 4px;
+
+}
+
+.card-wrapper {
+  padding-top: 45px;
+  width: 100%;
+  height: 250px;
+  margin-top: 33px;
+}
+.cards {
+  width: 330px;
+  height: 155px;
+  margin: 0 24px;
+  border: 1px solid #000;
 }

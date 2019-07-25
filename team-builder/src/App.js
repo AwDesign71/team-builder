@@ -15,8 +15,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        { console.log('Add',teams)}
-        <h1>{handleValue.teams}</h1>
       </header>
       <section>
       <form action="" onSubmit={event=>handleSubmit(event)}>
@@ -36,6 +34,13 @@ function App() {
           <button>Add Members</button>
         </legend>
       </form>
+      </section>
+      <section className='card-wrapper'>
+      {teams.map(webtech => {
+        return(
+          <div className='cards' key={webtech.name}>{webtech.name}</div>
+        );
+      })}
       </section>
     </div>
   );
